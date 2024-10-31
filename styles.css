@@ -1,0 +1,167 @@
+/* Fondo animado con GIF */
+
+body {
+    background: url('./giphy.webp') center/cover no-repeat fixed;
+    /* Reemplaza 'path-to-your-dark-gif.gif' con la ruta de tu GIF */
+    color: #00eaff;
+    /* Color de texto inicial en neón azul claro */
+    font-family: Arial, sans-serif;
+    /* Elimina overflow para permitir scroll */
+}
+
+
+
+
+/* Texto estilo neón */
+h1,
+label,
+.form-label,
+.signature {
+    color: #00eaff;
+    /* Azul neón */
+    text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 30px #00eaff;
+}
+
+#sqlOutput,
+pre,
+.form-check-label {
+    color: #ff00ff;
+    /* Fucsia neón */
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+/* Botón estilo neón */
+button {
+    --green: #1BFD9C;
+    /* Color verde neón */
+    font-size: 18px;
+    padding: 0.9em 3em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.6em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%, transparent 60%, rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: 0 0 5px #1BFD9C, 0 0 10px #1BFD9C, 0 0 15px #1BFD9C, 0 0 20px rgba(27, 253, 156, 0.6);
+}
+
+button:hover {
+    color: #82ffc9;
+    box-shadow: 0 0 10px #1BFD9C, 0 0 20px #1BFD9C, 0 0 30px #1BFD9C, 0 0 40px rgba(27, 253, 156, 0.8);
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform 0.4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%, rgba(27, 253, 156, 0.1) 60%, transparent 100%);
+}
+
+button:hover:before {
+    transform: translateX(15em);
+}
+
+/* Estilo personalizado para campos de formulario From Uiverse.io by liyaxu123 */
+.form-control {
+    position: relative;
+    margin: 20px 0 50px;
+    width: 100%;
+    /* Ajuste a ancho completo */
+    max-width: 400px;
+    /* Ajuste del ancho máximo */
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #00eaff;
+    /* Color neón para el texto */
+    transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+    /* Color azul claro en foco */
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: #fff;
+    /* Color blanco para la etiqueta */
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    color: lightblue;
+    transform: translateY(-30px);
+    /* Efecto de subida de etiqueta */
+}
+/* Estilo de animación para los campos de entrada */
+/* From Uiverse.io by liyaxu123 */
+.form-group {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 100%;
+}
+
+.form-group input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-group input:focus,
+.form-group input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.form-group label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+}
+
+.form-group label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: #fff;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
